@@ -3,3 +3,4 @@ project ( example )
 
 add_subdirectory ( as-a-macro )
 add_subdirectory ( super-simple )
+add_subdirectory ( list-and-destination-variable-name )

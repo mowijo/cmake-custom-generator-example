@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 SOURCE_FILE=$1
 DESTINATION_FOLDER=$2
 
