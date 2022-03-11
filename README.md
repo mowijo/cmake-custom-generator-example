@@ -5,7 +5,7 @@ This particular example uses C++ as the language, but the concept is the same fo
 
 ## Example
 
-The generator in this example takes a file and generates a C++ class with the same name as the file (except for extension). The generated C++ class offers a single method, ant that is to say the content of the definition file. For example the definition file `yoda.speak` containing
+The generator in this example takes a file and generates a C++ class with the same name as the file (except for extension). The generated C++ class offers a single method: To "speak" out the content of the definition file. For example the definition file `yoda.speak` containing
 
 ```text
 Do or do not. There is no try
@@ -60,15 +60,14 @@ To ease the learning curve, there are three examples in this repository
 and they should be studied in that order.
 
 ### super-simple
-Hardcodes everything and focuses on how to actually run a generator and integrate the result in a buiold.
+Hardcodes everything and focuses on how to actually run a generator and integrate the result in a build.
 
 ### as-a-macro
-Wraps the code generation in a macro, but several things are still hardcoded. While a macro and polluting the variable scope, this solution allows to reuse the code and add more than one speaker.
+Wraps the code generation in a macro, but several things are still hardcoded. Still, while being a macro and polluting the variable scope, this solution allows to reuse the code and add more than one speaker.
 
 ### list-and-destination-variable-name
-In this example, the macro is transformed into a function taking a list of sources and the name of a destination to put the list of generated sources in.
+In this example, the macro is transformed into a function taking a list of sources and the name of a destination variable to store the list of generated sources in.
 
-Experienced CMake users will frown upon the loop and there are most likelyt better ways to implement this, but the repository works and I am happy.
+Experienced CMake users will frown upon the loop and there are most likely better ways to implement this, but the repository works and I am happy.
 
 # Enjoy!
-
